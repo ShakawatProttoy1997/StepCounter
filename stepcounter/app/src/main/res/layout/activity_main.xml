@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".MainActivity">
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:text = "count steps"
+        android:textSize="20sp"
+        android:textFontWeight="800"
+        android:textColor="#cc9c27b0"
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+        <ProgressBar
+            android:id ='@+id/progressBar'
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:max="10000"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/cir_shape"
+            android:progressDrawable="@drawable/progress_bar"
+            style = "?android:progressBarStyleHorizontal"
+            />
+        <TextView
+            android:id ="@+id/step"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="step"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            android:textSize="30sp"
+            android:textColor="#EDCA0F8C"
+            android:textStyle="bold"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Goal: 10000"
+            android:textColor="#b20"
+            android:textSize="20dp"
+            android:layout_marginTop="180dp"
+            android:layout_marginLeft="100dp"
+        />
+    </RelativeLayout>
+</RelativeLayout>
